@@ -1,0 +1,154 @@
+.main__container {
+  color: rgb(28, 18, 18);
+}
+
+.services__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  padding: 20px;
+}
+
+.services__text{
+  font-size: 30px;
+}
+.services__title{
+  text-align: center;
+}
+
+.serviceCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 40px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  margin: 10px;
+  transition: 0.3s all ease-in-out;
+  height: auto;
+  max-width: 100%;
+}
+
+.serviceCard:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+  background-color: #3c3a3ae7;
+  color: white;
+}
+
+
+
+.contactContainer {
+  background-color: #000;
+  background: transparent;
+  color: #131010;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid #131010;
+  border-radius: 40px;
+  margin: 0 auto;
+  max-height: 100%;
+  margin-top: 10px;
+  max-width:700px;
+  transition: 0.3s all ease-in-out;
+  margin-bottom: 20px;
+}
+
+.contactContainer:hover{
+  box-shadow: 1px 1px 19px 0px #f0ebeb;
+  cursor:pointer;
+}
+
+.contactContainer h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.contactBtn {
+  background-color: rgb(191, 191, 60);
+  color: black; /* Green */
+  border: none;
+  border-radius: 30px;
+  font-weight: 500;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding: 28px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition: 0.2s all ease-in-out;
+}
+
+.contactBtn:hover{
+  background-color: black;
+  color: white;
+  border: none;
+  
+}
+
+
+.contactCTA {
+  margin-top: 20px;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+
+.faqSection {
+  background-color:#000000;
+  color: #fff;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.faqSection h1 {
+  font-size: 2em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.faqSection h2 {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+}
+
+.faqSection h3 {
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.faqSection p {
+  margin-left: 20px;
+  transition: max-height 0.4s ease-in-out;
+} 
+
+.faqItem{
+  border:1px solid;
+  padding:10px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  margin:10px;
+  width: 400px;
+  min-height: 100px;
+  transition: background-color 0.3s ease;
+}
+
+.faqItem:hover {
+  background-color: #333; /* Change background color on hover */
+}

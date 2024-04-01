@@ -1,0 +1,52 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  padding: 10px;
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top:0;
+  z-index: 100;
+  background-color: #e6dede; /* Darker shade of grey for a more modern look */
+}
+
+.logo > img {
+  width: 80px; /* Reduced size for a more balanced look */
+  height: 80px;
+}
+
+.list {
+  list-style-type: none;
+  display: flex;
+  gap: 30px;
+}
+
+.listItem > a {
+  color: #0c0909; /* Pure white for better contrast */
+  text-decoration: none;
+  font-size: 18px; /* Slightly smaller font size for a cleaner look */
+  transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for color and transform */
+}
+
+.listItem > a:hover {
+  color: #b2b7bc; /* Change color to blue on hover */ /* Add underline on hover */
+  transform: scale(1.1); /* Increase size to 110% on hover */
+}
+
+
+.contactBtn button {
+  border-radius: 20px;
+  padding: 10px;
+  width: 120px;
+  background: transparent;
+  color: #100909; /* Pure white for better contrast */
+  border: 2px solid #080505; /* Thicker border for more emphasis */
+  cursor: pointer;
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.contactBtn button:hover {
+  background-color: #0e0909;
+  color: #f4ecec; /* Dark text on hover for better readability */
+}

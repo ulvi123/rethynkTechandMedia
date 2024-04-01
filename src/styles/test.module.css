@@ -1,0 +1,206 @@
+/* Common styles for all screen sizes */
+.page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    position: relative;
+  }
+  
+  .homeContainer {
+    flex: 1;
+    color: white;
+    overflow-y: auto;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  /* Hero section */
+  .hero__text h1 {
+    font-size: 50px;
+  }
+  
+  .hero__button {
+    padding: 10px;
+    border-radius: 20px;
+    width: 130px;
+    background: transparent;
+    color: black;
+    border: none;
+    background-color: white;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  /* Features section */
+  .features {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 20px;
+    width: 100%;
+  }
+  
+  .gridItem {
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  .SMM {
+    display: flex;
+    flex-direction: column;
+    background: transparent;
+    padding: 10px;
+  }
+  
+  .SMM__images .monitor {
+    margin-left: -70px;
+    margin-bottom: 27px;
+  }
+  
+  .SMM__text {
+    margin-left: 37px;
+  }
+  
+  .SMM__images .circle {
+    margin-left: 28px;
+  }
+  
+  .circleRed {
+    width: 100px;
+    height: 100px;
+  }
+  
+  /* About Us section */
+  .aboutUs__container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .aboutUs__img img {
+    width: 100%; /* Adjust the width based on your design */
+    height: auto; /* Preserve aspect ratio */
+    max-width: 390px; /* Set a maximum width */
+  }
+  
+  .aboutUs__Btn {
+    width: 100px; /* Adjust the width based on your design */
+    margin: 8px;
+  }
+  
+  /* Services section */
+  .services__container {
+    display: flex;
+    flex-wrap: wrap; /* Wrap elements to the next line on small screens */
+    gap: 20px;
+    justify-content: center; /* Center elements on small screens */
+    margin: 30px;
+  }
+  
+  /* Works section */
+  .worksContainerText h2,
+  p {
+    text-align: center;
+  }
+  
+  .worksContainerSliderImages {
+    display: flex;
+    flex-wrap: wrap; /* Wrap elements to the next line on small screens */
+    gap: 10px; /* Adjust the gap based on your design */
+    justify-content: center; /* Center elements on small screens */
+  }
+  
+  .worksSectionBtn {
+    width: 100%; /* Expand the button to the full width on small screens */
+    margin: 10px auto; /* Center the button */
+  }
+  
+  /* Testimonials section */
+  .testi__container {
+    display: flex;
+    flex-wrap: wrap; /* Wrap elements to the next line on small screens */
+    justify-content: center; /* Center elements on small screens */
+    gap: 10px; /* Adjust the gap based on your design */
+    align-items: center;
+  }
+  
+  /* Make the site responsive for medium-sized screens (e.g., tablets) */
+  @media (max-width: 768px) {
+    .hero__text h1 {
+      font-size: 36px;
+    }
+  
+    .hero__button {
+      width: 100px;
+    }
+  
+    .features {
+      width: 90%;
+    }
+  
+    .gridItem {
+      padding: 5px;
+    }
+  
+    .SMM__images .monitor {
+      margin-left: -30px;
+    }
+  
+    .SMM__text {
+      margin-left: 15px;
+    }
+  
+    .SMM__images .circle {
+      margin-left: 15px;
+    }
+  
+    .aboutUs__img img {
+      max-width: 300px;
+    }
+  
+    .aboutUs__Btn {
+      width: 90px;
+    }
+  }
+  
+  /* Make the site responsive for small-sized screens (e.g., mobile phones) */
+  @media (max-width: 480px) {
+    .hero__text h1 {
+      font-size: 24px;
+    }
+  
+    .hero__button {
+      width: 80px;
+    }
+  
+    .features {
+      width: 100%;
+    }
+  
+    .gridItem {
+      padding: 3px;
+    }
+  
+    .SMM__images .monitor {
+      margin-left: -20px;
+    }
+  
+    .SMM__text {
+      margin-left: 10px;
+    }
+  
+    .SMM__images .circle {
+      margin-left: 10px;
+    }
+  
+    .aboutUs__img img {
+      max-width: 250px;
+    }
+  
+    .aboutUs__Btn {
+      width: 80px;
+    }
+  }
+  
+  /* Additional responsive rules for other sections can be added as needed */
+  
